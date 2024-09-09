@@ -1,19 +1,33 @@
-var http = require("http");
+
+// ==================================example of npm install================
+// var http = require("http");
+// let upercase = require("uppercase");
+// http.createServer((req,res)=>{
+//   res.write("welcome the new page  :  ");
+//   res.write(upercase("i am cybrom student welcome toyou!!"));
+//   res.end();
+// }).listen(8080);
+
+
+
+
 // var mycol = require("./mymodule");
-let fs = require("fs");
-
-fs.writeFile("ram.txt" , "welcome Ram  === Bhopal ",(err)=>{
-  if(err) throw err;
-  console.log("file created");
-})
-
-
-
-
-
-
-
-
+// let fs = require("fs");
+// =======================================rename file=====================
+// fs.rename("ram.txt" , "seetaRam.txt",(err)=>{
+//   if(err) throw err;
+//   console.log("File Renamed");
+// })
+// ==================================add/update==========================================
+// fs.writeFile("ram.txt" , "welcome Ram  === Bhopal ",(err)=>{
+//   if(err) throw err;
+//   console.log("file created");
+// })
+// ==================================file delete==================================
+// fs.unlink("myfile.txt",(err)=>{
+// if(err) throw err ;
+// console.log("file deleted")
+// });
 //OPEN NEW FILE//
 // fs.open("cybrom.txt", "w", (err, file) => {
 //   if (err) throw err;
