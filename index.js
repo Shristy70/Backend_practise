@@ -2,15 +2,27 @@ var http = require("http");
 // var mycol = require("./mymodule");
 let fs = require("fs");
 
-//OPEN NEW FILE//
-fs.open("cybrom.txt", "w", (err, file) => {
-  if (err) throw err;
+fs.writeFile("ram.txt" , "welcome Ram  === Bhopal ",(err)=>{
+  if(err) throw err;
   console.log("file created");
-});
-fs.open("cybrom.txt", "w", (err, file) => {
-  if (err) throw err;
-  console.log("readd file");
-});
+})
+
+
+
+
+
+
+
+
+//OPEN NEW FILE//
+// fs.open("cybrom.txt", "w", (err, file) => {
+//   if (err) throw err;
+//   console.log("file created");
+// });
+// fs.open("cybrom.txt", "w", (err, file) => {
+//   if (err) throw err;
+//   console.log("readd file");
+// });
 
 // ====================create new file AND ADD DATA==================
 // fs.appendFile("file.txt", "wlcome cybrom student := ", (err) => {
