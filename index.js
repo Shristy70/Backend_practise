@@ -1,3 +1,14 @@
+const express = require("express");
+const app = express();
+const stuData = require("./routes/studentRoute");
+const teacherData = require("./routes/teacherRoute");
+const port = 8000;
+
+app.use("/students", stuData);
+app.use("/teachers", teacherData);
+
+
+app.listen(port, () => console.log("server start"));
 
 // ==================================example of npm install================
 // var http = require("http");
@@ -7,9 +18,6 @@
 //   res.write(upercase("i am cybrom student welcome toyou!!"));
 //   res.end();
 // }).listen(8080);
-
-
-
 
 // var mycol = require("./mymodule");
 // let fs = require("fs");
