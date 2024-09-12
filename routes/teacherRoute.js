@@ -1,12 +1,7 @@
-const express =require("express");
+const express = require("express");
 const route = express.Router();
-route.get("/teacherinfo",(req,res)=>{
-    res.send("Teacher Info");
-})
-route.get("/teacherdepartment",(req,res)=>{
-    res.send("Teacher department");
-})
-route.get("/teachersalary",(req,res)=>{
-    res.send("Teacher salary");
-})
+const teacherController = require("../controllers/teacherController.js")
+route.get("/info" , teacherController.teacherInfo )
+route.get("/department" , teacherController.teacherDepartment)
+route.get("/salary" , teacherController.teacherSalary )
 module.exports = route;
